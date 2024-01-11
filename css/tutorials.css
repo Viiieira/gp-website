@@ -1,0 +1,7 @@
+#tutorials {
+	padding: calc((2.5rem * 0.5) + var(--min-height-navbar)) calc(7.5rem * 0.5);
+}
+
+#tutorials img {
+	cursor: pointer;
+}

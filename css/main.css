@@ -2,9 +2,10 @@
 
 /* Imports */
 @import url('navbar.css');
-@import url('portfolio.css');
 @import url('products.css');
+@import url('tutorials.css');
 @import url('form.css');
+@import url('portfolio.css');
 
 /* General Styling */
 :root {

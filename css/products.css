@@ -18,11 +18,18 @@
 	gap: 1rem;
 }
 
+@media (max-width: 768px) {
+	#products__filters {
+		flex-wrap: wrap;
+	}
+}
+
 #products__filter .form-select {
 	width: auto;
 }
 
-#products button {
+#products button,
+#tutorials button {
 	background-color: var(--secondary);
 	color: var(--primary);
 	padding: 10px 20px;
