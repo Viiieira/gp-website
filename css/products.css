@@ -45,20 +45,3 @@
 	background-color: rgba(0, 0, 0, 0.125);
 	margin-bottom: 2rem;
 }
-
-.card-text {
-	display: block;
-	overflow: hidden;
-	position: relative;
-	line-height: 1.2em; /* Adjust based on your font size and line height */
-	max-height: 3.6em; /* 3 lines with 1.2em line-height */
-}
-
-.card-text::before {
-	content: '...';
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	padding-left: 20px; /* Adjust based on the width of your ellipsis */
-	/* background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%); */
-}
