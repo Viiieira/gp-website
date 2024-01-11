@@ -1,0 +1,40 @@
+#products {
+	padding: calc((2.5rem * 0.5) + var(--min-height-navbar)) calc(7.5rem * 0.5);
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+#products__filter-wrapper {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#products__filters {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+#products__filter .form-select {
+	width: auto;
+}
+
+#products button {
+	background-color: var(--secondary);
+	color: var(--primary);
+	padding: 10px 20px;
+	border-radius: 20px;
+	border: none;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.product-card {
+	background-color: rgba(0, 0, 0, 0.125);
+	margin-bottom: 2rem;
+}

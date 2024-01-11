@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ImpriMuito | Products</title>
+		<!-- FontAwesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
+			integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"
+			integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css"
+			integrity="sha512-pZlKGs7nEqF4zoG0egeK167l6yovsuL8ap30d07kA5AJUq+WysFlQ02DLXAmN3n0+H3JVz5ni8SJZnrOaYXWBA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./css/bootstrap.css" />
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/portfolio.css" />
+	</head>
+	<body>
+		<!-- Progress Bar + Navbar -->
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="progress-container">
+				<div class="progress-bar fixed-top" id="myBar"></div>
+			</div>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="./">ImpriMuito</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<i class="fa-solid fa-bars-staggered"></i>
+				</button>
+				<div
+					class="collapse navbar-collapse"
+					id="navbarSupportedContent"
+				>
+					<ul class="navbar-nav m-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a href="./" aria-current="page" class="nav-link"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a href="#about-us" class="nav-link">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a href="products.html" class="nav-link"
+								>Products</a
+							>
+						</li>
+						<li class="nav-item">
+							<a href="#contact-me-form" class="nav-link"
+								>Contact Us</a
+							>
+						</li>
+						<li class="nav-item">
+							<i class="nav-link fa-solid" id="toggleLight"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Products Listings -->
+		<section id="products">
+			<div id="products__filter-wrapper">
+				<h3>Filters</h3>
+				<div id="products__filters">
+					<select class="form-select">
+						<option selected disabled>Filament type</option>
+						<option value="PLA">PLA</option>
+						<option value="ABS">ABS</option>
+						<option value="PETG">PETG</option>
+					</select>
+					<select class="form-select">
+						<option selected disabled>Product type</option>
+						<option value="figurines">figurines</option>
+						<option value="functional prints">
+							functional prints
+						</option>
+						<option value="accessories">accessories</option>
+					</select>
+					<select class="form-select">
+						<option selected disabled>Print Resolution</option>
+						<option value="High">High</option>
+						<option value="Medium">Medium</option>
+						<option value="Low">Low</option>
+					</select>
+					<select class="form-select">
+						<option selected disabled>Color</option>
+						<option value="">Select Color</option>
+						<option value="red">Red</option>
+						<option value="green">Green</option>
+						<option value="blue">Blue</option>
+						<option value="yellow">Yellow</option>
+						<option value="orange">Orange</option>
+						<option value="purple">Purple</option>
+						<option value="pink">Pink</option>
+						<option value="brown">Brown</option>
+						<option value="gray">Gray</option>
+						<option value="black">Black</option>
+						<option value="white">White</option>
+					</select>
+					<button type="button">Apply</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="card product-card">
+						<img
+							src="./img/wallpaper.jpg"
+							class="card-img-top"
+							alt="Product 1"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Product 1</h5>
+							<p class="card-text">Description of Product 1.</p>
+							<button type="button">
+								<i class="fa-solid fa-cart-shopping"></i>
+								Add to Cart
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="card product-card">
+						<img
+							src="./img/wallpaper.jpg"
+							class="card-img-top"
+							alt="Product 2"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Product 2</h5>
+							<p class="card-text">Description of Product 2.</p>
+							<button type="button">
+								<i class="fa-solid fa-cart-shopping"></i>
+								Add to Cart
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="card product-card">
+						<img
+							src="./img/wallpaper.jpg"
+							class="card-img-top"
+							alt="Product 3"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Product 3</h5>
+							<p class="card-text">Description of Product 3.</p>
+							<button type="button">
+								<i class="fa-solid fa-cart-shopping"></i>
+								Add to Cart
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="card product-card">
+						<img
+							src="./img/wallpaper.jpg"
+							class="card-img-top"
+							alt="Product 4"
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Product 4</h5>
+							<p class="card-text">Description of Product 4.</p>
+							<button type="button">
+								<i class="fa-solid fa-cart-shopping"></i>
+								Add to Cart
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Add more product cards as needed -->
+			</div>
+		</section>
+		<!-- Footer -->
+		<footer>ImpriMuito &copy; 2024</footer>
+		<!-- Bootstrap, Popper & Main JS -->
+		<script src="./js/popper.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/portfolio_main.js"></script>
+		<script src="./js/portfolio_toggleLight.js"></script>
+	</body>
+</html>

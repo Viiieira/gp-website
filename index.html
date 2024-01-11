@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ImpriMuito</title>
+		<!-- FontAwesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
+			integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"
+			integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css"
+			integrity="sha512-pZlKGs7nEqF4zoG0egeK167l6yovsuL8ap30d07kA5AJUq+WysFlQ02DLXAmN3n0+H3JVz5ni8SJZnrOaYXWBA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./css/bootstrap.css" />
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="./css/portfolio.css" />
+	</head>
+	<body>
+		<!-- Progress Bar + Navbar -->
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="progress-container">
+				<div class="progress-bar fixed-top" id="myBar"></div>
+			</div>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="./">ImpriMuito</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<i class="fa-solid fa-bars-staggered"></i>
+				</button>
+				<div
+					class="collapse navbar-collapse"
+					id="navbarSupportedContent"
+				>
+					<ul class="navbar-nav m-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a href="#hero" aria-current="page" class="nav-link"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item">
+							<a href="#about-us" class="nav-link">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a href="products.html" class="nav-link"
+								>Products</a
+							>
+						</li>
+						<li class="nav-item">
+							<a href="#contact-me-form" class="nav-link"
+								>Contact Us</a
+							>
+						</li>
+						<li class="nav-item">
+							<i class="nav-link fa-solid" id="toggleLight"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Hero Section -->
+		<header id="hero">
+			<div class="info">
+				<h1><span class="colored">ImpriMuito</span></h1>
+				<!-- <h3>Student, Computer Engineering, IPVC-ESTG</h3> -->
+				<div id="go-down">
+					<button onclick="window.location.href='#about-us'">
+						<i class="fa-solid fa-arrow-down"></i> See more
+					</button>
+				</div>
+			</div>
+		</header>
+		<!-- About Me Section -->
+		<section id="about-us">
+			<h1>+ About <span class="colored">us</span></h1>
+			<div id="about-us-container">
+				<!-- Mais Sobre Mim -->
+				<div class="about-us-card">
+					<h3>
+						<p>My</p>
+						<span class="colored">resume</span>
+					</h3>
+					<div class="about-us-info">
+						<p>
+							My name is Hugo Abel Rodrigues Félix Vieira Vieira.
+							I'm 19 and I'm a student at Computer Engineering at
+							IPVC-ESTG, currently on my 3rd year. I consider
+							myself a proactive hard-working person.
+						</p>
+					</div>
+				</div>
+				<div class="about-us-card">
+					<h3>
+						<p>My</p>
+						<span class="colored">resume</span>
+					</h3>
+					<div class="about-us-info">
+						<p>
+							My name is Hugo Abel Rodrigues Félix Vieira Vieira.
+							I'm 19 and I'm a student at Computer Engineering at
+							IPVC-ESTG, currently on my 3rd year. I consider
+							myself a proactive hard-working person.
+						</p>
+					</div>
+				</div>
+				<div class="about-us-card">
+					<h3>
+						<p>My</p>
+						<span class="colored">resume</span>
+					</h3>
+					<div class="about-us-info">
+						<p>
+							My name is Hugo Abel Rodrigues Félix Vieira Vieira.
+							I'm 19 and I'm a student at Computer Engineering at
+							IPVC-ESTG, currently on my 3rd year. I consider
+							myself a proactive hard-working person.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Contact Me Form Section -->
+		<section id="contact-me-form">
+			<h1>Contact <span class="colored">us</span></h1>
+			<!-- <h3>Send us a message.</h3> -->
+			<form
+				action="../../server/portfolio.php"
+				method="post"
+				autocomplete="off"
+			>
+				<div class="form-input">
+					<label for="nameField"
+						>Name <span class="text-secondary">*</span></label
+					>
+					<input
+						type="text"
+						name="name"
+						id="nameField"
+						placeholder="John Doe"
+						required
+					/>
+				</div>
+				<div class="form-input">
+					<label for="emailField"
+						>E-mail <span class="text-secondary">*</span></label
+					>
+					<input
+						type="email"
+						name="email"
+						id="emailField"
+						placeholder="johndoe@company.com"
+						required
+					/>
+				</div>
+				<div class="form-input">
+					<label for="messageFeild"
+						>Message <span class="text-secondary">*</span></label
+					>
+					<textarea
+						name="message"
+						id="messageField"
+						cols="30"
+						rows="10"
+						placeholder="Hi ImpriMuito, pleased to talk to you..."
+						required
+					></textarea>
+				</div>
+				<button type="submit" name="sendMessageSubmit">
+					<i class="fa-solid fa-paper-plane"></i> Send
+				</button>
+			</form>
+			<div id="contacts-wrapper">
+				<a href="tel:+351987654321">
+					<div class="contact-card rounded">
+						<div class="icon">
+							<i class="fa-solid fa-phone"></i>
+							<p>+351 987 654 321</p>
+						</div>
+					</div>
+				</a>
+				<a href="mailto:imprimuito@gmail.com">
+					<div class="contact-card rounded">
+						<div class="icon">
+							<i class="fa-solid fa-envelope"></i>
+							<p>imprimuito@gmail.com</p>
+						</div>
+					</div>
+				</a>
+				<a href="https://google.pt" target="_blank">
+					<div class="contact-card rounded">
+						<div class="icon">
+							<i class="fa-solid fa-location-dot"></i>
+							<p>Address Test 123</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</section>
+		<!-- Footer -->
+		<footer>ImpriMuito &copy; 2024</footer>
+		<!-- Bootstrap, Popper & Main JS -->
+		<script src="./js/popper.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/portfolio_main.js"></script>
+		<script src="./js/portfolio_toggleLight.js"></script>
+	</body>
+</html>
