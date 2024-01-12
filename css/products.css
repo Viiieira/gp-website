@@ -52,6 +52,10 @@
 	margin-bottom: 2rem;
 }
 
-.card-title {
+.card-text {
+	margin-top: 0.5rem;
+}
+
+.card-title:last-of-type {
 	margin-bottom: 0 !important;
 }
