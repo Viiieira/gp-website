@@ -5,6 +5,12 @@
 	gap: 2rem;
 }
 
+@media screen and (max-width: 425px) {
+	#products {
+		padding: calc((2.5rem * 0.5) + var(--min-height-navbar)) 1rem;
+	}
+}
+
 #products__filter-wrapper {
 	display: flex;
 	align-items: center;

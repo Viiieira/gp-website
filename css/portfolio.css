@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
 /* General Styling */
 :root {
@@ -11,8 +11,8 @@
 	--title-color: rgb(255, 255, 255);
 
 	/* Fonts */
-	--serif: 'Lora', serif;
-	--sans-serif: 'Montserrat Alternates', sans-serif;
+	--serif: "Lora", serif;
+	--sans-serif: "Montserrat Alternates", sans-serif;
 
 	/* Sizes */
 	--min-height-navbar: 12vh;
@@ -161,7 +161,7 @@ a.navbar-brand:focus {
 			rgba(38, 50, 64, 0.8) 0%,
 			rgba(38, 50, 64, 1) 100%
 		),
-		url('../img/me.jpg');
+		url("../img/me.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -189,7 +189,7 @@ a.navbar-brand:focus {
 }
 
 #hero button,
-#contact-me-form form button[type='submit'] {
+#contact-me-form form button[type="submit"] {
 	background-color: var(--secondary);
 	color: var(--primary);
 	padding: 10px 20px;
@@ -313,7 +313,7 @@ a.navbar-brand:focus {
 }
 
 .about-us-card img::after {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -339,6 +339,18 @@ a.navbar-brand:focus {
 
 	.about-us-card:last-child {
 		margin: 1rem 2rem;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	#about-us,
+	#education,
+	#contact-me-form {
+		padding: calc((2.5rem * 0.5) + var(--min-height-navbar)) 1rem;
+	}
+
+	.about-us-card:last-child {
+		margin: 1rem;
 	}
 }
 
@@ -577,8 +589,8 @@ a.navbar-brand:focus {
 	margin-bottom: 20px;
 }
 
-#contact-me-form button[type='submit']:hover,
-#contact-me-form button[type='submit']:focus {
+#contact-me-form button[type="submit"]:hover,
+#contact-me-form button[type="submit"]:focus {
 	background-color: var(--title-color);
 }
 
@@ -673,7 +685,7 @@ footer {
 			rgba(195, 191, 199, 0.8) 0%,
 			rgba(195, 191, 199, 1) 100%
 		),
-		url('../img/me.jpg');
+		url("../img/me.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -682,8 +694,8 @@ footer {
 
 .light-mode #hero button:hover,
 .light-mode #hero button:focus,
-.light-mode #contact-me-form form button[type='submit']:hover,
-.light-mode #contact-me-form form button[type='submit']:focus {
+.light-mode #contact-me-form form button[type="submit"]:hover,
+.light-mode #contact-me-form form button[type="submit"]:focus {
 	background-color: var(--tertiary);
 }
 
@@ -697,7 +709,7 @@ textarea {
 			rgba(38, 50, 64, 0.8) 0%,
 			rgba(38, 50, 64, 1) 100%
 		),
-		url('../img/wallpaper.jpg');
+		url("../img/wallpaper.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -709,7 +721,7 @@ textarea {
 			rgba(195, 191, 199, 0.8) 0%,
 			rgba(195, 191, 199, 1) 100%
 		),
-		url('../img/wallpaper.jpg');
+		url("../img/wallpaper.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
